@@ -1,0 +1,87 @@
+/* src/pages/timeCounter/TimeCounter.css */
+
+.countdown-section {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #6a6b4b; /* Solid olive green background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.countdown-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(14px, 2.5vw, 18px);
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff; /* Classic white contrast */
+  letter-spacing: 0.3em;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(12px, 3vw, 24px);
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.countdown-card {
+  background-color: #ffffff; /* Rounded white cards */
+  width: clamp(80px, 12vw, 110px);
+  height: clamp(85px, 13vw, 120px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.countdown-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.countdown-value {
+  font-family: 'Cinzel', serif; /* Elegant serif numbers */
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 400;
+  color: #6a6b4b; /* Number color matches background olive green */
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.countdown-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(8px, 1.2vw, 10px);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #c4bfac; /* Label in champagne gold tint */
+  letter-spacing: 0.15em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .countdown-section {
+    padding: 60px 15px;
+  }
+  
+  .countdown-title {
+    margin-bottom: 30px;
+    letter-spacing: 0.2em;
+  }
+  
+  .countdown-card {
+    border-radius: 8px;
+    width: 75px;
+    height: 80px;
+  }
+}
