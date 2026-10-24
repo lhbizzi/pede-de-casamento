@@ -1,0 +1,290 @@
+/* src/pages/dressCode/DressCode.css */
+
+.dresscode-section {
+  width: 100%;
+  background-color: #faf9f6;
+  color: #333333;
+  padding: clamp(60px, 8vw, 100px) 20px clamp(70px, 9vw, 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.dresscode-container {
+  width: 100%;
+  max-width: 1040px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Top Botanical Ornament */
+.dresscode-ornament-wrapper {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dresscode-botanical-ornament {
+  width: clamp(70px, 10vw, 95px);
+  height: auto;
+  display: block;
+}
+
+/* Section Title */
+.dresscode-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(24px, 3.2vw, 34px);
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  color: #b37d68; /* Terracotta tone */
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 14px;
+  margin-right: -0.35em; /* True center alignment */
+}
+
+/* Traje Fino Badge */
+.dresscode-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 20px;
+  border-radius: 50px;
+  background: rgba(106, 107, 75, 0.08);
+  border: 1px solid rgba(106, 107, 75, 0.28);
+  color: #6a6b4b;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(106, 107, 75, 0.06);
+}
+
+/* Intro Paragraph */
+.dresscode-intro {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(14px, 1.2vw, 15.5px);
+  font-weight: 350;
+  line-height: 1.85;
+  color: #4a4a4a;
+  max-width: 720px;
+  margin: 0 auto clamp(36px, 4.8vw, 52px) auto;
+  letter-spacing: 0.015em;
+  padding: 0 10px;
+}
+
+/* Main Grid Layout */
+.dresscode-main-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.25fr;
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
+  max-width: 960px;
+  width: 100%;
+  margin-bottom: clamp(34px, 4.5vw, 48px);
+}
+
+/* Watercolor Illustration Card */
+.dresscode-image-container {
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(179, 125, 104, 0.16);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dresscode-image-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(179, 125, 104, 0.16);
+}
+
+.dresscode-image {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Cards Column */
+.dresscode-cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Generic Dress Code Card */
+.dresscode-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: clamp(20px, 2.5vw, 26px);
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.dresscode-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Women Card Styling */
+.card-women {
+  border-left: 4px solid #b37d68;
+}
+
+.card-women .dresscode-card-tag {
+  color: #b37d68;
+  background: rgba(179, 125, 104, 0.1);
+}
+
+/* Men Card Styling */
+.card-men {
+  border-left: 4px solid #6a6b4b;
+}
+
+.card-men .dresscode-card-tag {
+  color: #6a6b4b;
+  background: rgba(106, 107, 75, 0.1);
+}
+
+/* Card Header */
+.dresscode-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.dresscode-card-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.dresscode-card-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(17px, 1.6vw, 20px);
+  font-weight: 600;
+  color: #222222;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
+.dresscode-card-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(13px, 1.1vw, 14.5px);
+  font-weight: 350;
+  line-height: 1.75;
+  color: #4f4f4f;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+/* Pills */
+.dresscode-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.dresscode-pill {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: #555555;
+  background: #f7f6f2;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Gratitude Box */
+.dresscode-gratitude-box {
+  max-width: 820px;
+  width: 100%;
+  background: linear-gradient(135deg, #fcfbf8 0%, #f7f4ed 100%);
+  border: 1px solid rgba(179, 125, 104, 0.22);
+  border-radius: 12px;
+  padding: clamp(20px, 3vw, 26px) clamp(20px, 3.5vw, 32px);
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(106, 107, 75, 0.07);
+}
+
+.dresscode-gratitude-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(13.5px, 1.15vw, 15px);
+  font-weight: 400;
+  line-height: 1.8;
+  color: #333333;
+  margin: 0;
+  letter-spacing: 0.015em;
+}
+
+/* Responsive Styles */
+@media (max-width: 840px) {
+  .dresscode-main-grid {
+    grid-template-columns: 1fr;
+    max-width: 580px;
+    gap: 30px;
+  }
+
+  .dresscode-image-container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .dresscode-title {
+    font-size: 22px;
+    letter-spacing: 0.28em;
+    margin-right: -0.28em;
+  }
+
+  .dresscode-badge {
+    font-size: 11px;
+  }
+
+  .dresscode-intro {
+    font-size: 13.5px;
+    line-height: 1.75;
+  }
+
+  .dresscode-card {
+    padding: 18px 16px;
+  }
+
+  .dresscode-card-title {
+    font-size: 16px;
+  }
+
+  .dresscode-card-text {
+    font-size: 13px;
+  }
+
+  .dresscode-gratitude-text {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}

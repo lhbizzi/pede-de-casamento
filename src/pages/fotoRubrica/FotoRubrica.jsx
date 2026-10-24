@@ -9,6 +9,7 @@ export default function FotoRubrica() {
 
   const menuItems = [
     { label: "Home", href: "#home" },
+    { label: "O Casal", href: "#casal" },
     {
       label: "Cerimônia",
       href: "#cerimonia",
@@ -28,7 +29,7 @@ export default function FotoRubrica() {
   };
 
   return (
-    <div className="hero-container">
+    <div id="home" className="hero-container">
       {/* Background Image Container */}
       <div
         className="hero-bg"

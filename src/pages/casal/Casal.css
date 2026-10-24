@@ -1,0 +1,143 @@
+/* src/pages/casal/Casal.css */
+
+.casal-section {
+  width: 100%;
+  background-color: #ffffff;
+  color: #333333;
+  padding: clamp(60px, 8vw, 100px) 20px clamp(50px, 6.5vw, 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.casal-container {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Top Botanical Ornament */
+.casal-ornament-wrapper {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.casal-botanical-ornament {
+  width: clamp(70px, 10vw, 95px);
+  height: auto;
+  display: block;
+}
+
+/* Title: O CASAL */
+.casal-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(24px, 3.2vw, 34px);
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  color: #b37d68; /* Warm dusty terracotta tone */
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: clamp(28px, 4vw, 44px);
+  margin-right: -0.35em; /* True center alignment */
+  transition: letter-spacing 0.3s ease;
+}
+
+/* Circular Photos Container */
+.casal-photos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(16px, 4vw, 36px);
+  margin-bottom: clamp(32px, 4.5vw, 48px);
+  flex-wrap: wrap;
+}
+
+.casal-photo-circle {
+  width: clamp(140px, 20vw, 210px);
+  height: clamp(140px, 20vw, 210px);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08), 0 0 0 2px rgba(179, 125, 104, 0.2);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  background-color: #faf8f5;
+}
+
+.casal-photo-circle:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 16px 36px rgba(179, 125, 104, 0.22), 0 0 0 2.5px rgba(179, 125, 104, 0.35);
+}
+
+/* Face framing for Maria Vitória */
+.casal-photo-circle.photo-left {
+  background-size: 340%;
+  background-position: 21% 47%;
+}
+
+/* Face framing for Frederico */
+.casal-photo-circle.photo-right {
+  background-size: 340%;
+  background-position: 34% 42%;
+}
+
+/* Couple Story Typography */
+.casal-story-content {
+  max-width: 820px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 16px;
+}
+
+.casal-paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(13.5px, 1.15vw, 15px);
+  font-weight: 350;
+  line-height: 1.9;
+  color: #4a4a4a;
+  margin: 0;
+  letter-spacing: 0.015em;
+  text-align: center;
+}
+
+.casal-highlight-paragraph {
+  font-weight: 450;
+  color: #2b2b2b;
+}
+
+.casal-closing-paragraph {
+  font-weight: 450;
+  color: #6a6b4b; /* Brand olive tone */
+  margin-top: 4px;
+}
+
+/* Responsive queries */
+@media (max-width: 480px) {
+  .casal-title {
+    font-size: 22px;
+    letter-spacing: 0.28em;
+    margin-right: -0.28em;
+  }
+
+  .casal-photos-container {
+    gap: 14px;
+  }
+
+  .casal-photo-circle {
+    width: 130px;
+    height: 130px;
+  }
+
+  .casal-paragraph {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+}
